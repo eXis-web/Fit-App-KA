@@ -9,6 +9,7 @@ A prototype landing page for a prototype bussiness called EvoGym. It's fully res
 
 ### Tools used 🧰
 
+
 - [NodeJS](https://nodejs.org/)
 - [Vite](https://vitejs.dev/)
 - [React](https://reactjs.org/)
@@ -20,3 +21,4 @@ A prototype landing page for a prototype bussiness called EvoGym. It's fully res
 - [Autoprefixer](https://autoprefixer.github.io/)
 - [Firefox](https://www.mozilla.org/en-US/firefox/)
 - [Visual Studio Code](https://code.visualstudio.com/)
+
