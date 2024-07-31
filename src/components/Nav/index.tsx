@@ -6,6 +6,8 @@ import Links from './Links';
 import { SelectedLink } from '@/utils/types';
 import { useMQ } from '@/hooks/useMQ';
 import { ActionButton } from '@/shared/ActionButton';
+import SignIn from './SignIn'; // імпортуємо новий компонент
+
 interface Props {
   selectedLink: SelectedLink;
   setSelectedLink: (value: SelectedLink) => void;
@@ -31,7 +33,7 @@ export const Nav = ({ selectedLink, setSelectedLink, isTopOfPage }: Props) => {
                   <Links link="Contact Us" selectedLink={selectedLink} setSelectedLink={setSelectedLink} />
                 </div>
                 <div className={`${flexBetween} gap-8`}>
-                  <button className="ease transition-all duration-200 hover:text-primary-500">Sign in</button>
+                  <SignIn /> {/* Додаємо наш компонент */}
                   <ActionButton setSelectedLink={setSelectedLink}>Become a Member</ActionButton>
                 </div>
               </div>
