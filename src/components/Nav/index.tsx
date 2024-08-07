@@ -6,7 +6,6 @@ import Links from './Links';
 import { SelectedLink } from '@/utils/types';
 import { useMQ } from '@/hooks/useMQ';
 import { ActionButton } from '@/shared/ActionButton';
-import SignIn from './SignIn'; // імпортуємо новий компонент
 
 interface Props {
   selectedLink: SelectedLink;
@@ -18,6 +17,7 @@ export const Nav = ({ selectedLink, setSelectedLink, isTopOfPage }: Props) => {
   const isDesktop = useMQ('(min-width: 1060px)');
   const [toggle, setToggle] = useState(false);
   const navBarBg = !isTopOfPage && 'bg-primary-100 drop-shadow';
+  
   return (
     <nav>
       <div className={`${navBarBg} ${flexBetween} ease fixed top-0 z-30 w-full py-6 transition-all duration-200`}>
@@ -27,13 +27,13 @@ export const Nav = ({ selectedLink, setSelectedLink, isTopOfPage }: Props) => {
             {isDesktop ? (
               <div className={`${flexBetween} w-full`}>
                 <div className={`${flexBetween} gap-8 text-sm`}>
-                  <Links link="Home" selectedLink={selectedLink} setSelectedLink={setSelectedLink} />
+                  <Links link="Про мене" selectedLink={selectedLink} setSelectedLink={setSelectedLink} />  {/* Замінили Home на Про мене */}
                   <Links link="Benefits" selectedLink={selectedLink} setSelectedLink={setSelectedLink} />
                   <Links link="Our Classes" selectedLink={selectedLink} setSelectedLink={setSelectedLink} />
                   <Links link="Contact Us" selectedLink={selectedLink} setSelectedLink={setSelectedLink} />
                 </div>
                 <div className={`${flexBetween} gap-8`}>
-                  <SignIn /> {/* Додаємо наш компонент */}
+                  <button className="ease transition-all duration-200 hover:text-primary-500">Sign in</button>
                   <ActionButton setSelectedLink={setSelectedLink}>Become a Member</ActionButton>
                 </div>
               </div>
@@ -55,7 +55,7 @@ export const Nav = ({ selectedLink, setSelectedLink, isTopOfPage }: Props) => {
           </div>
 
           <div className="ml-[33%] flex flex-col gap-10 text-2xl">
-            <Links link="Home" selectedLink={selectedLink} setSelectedLink={setSelectedLink} />
+            <Links link="Про мене" selectedLink={selectedLink} setSelectedLink={setSelectedLink} />  {/* Замінили Home на Про мене */}
             <Links link="Benefits" selectedLink={selectedLink} setSelectedLink={setSelectedLink} />
             <Links link="Our Classes" selectedLink={selectedLink} setSelectedLink={setSelectedLink} />
             <Links link="Contact Us" selectedLink={selectedLink} setSelectedLink={setSelectedLink} />

@@ -1,5 +1,5 @@
 export enum SelectedLink {
-  Home = 'home',
+  ПроМене = 'промене',  // Замінили Home на AboutMe
   Benefits = 'benefits',
   OurClasses = 'ourclasses',
   ContactUs = 'contactus',

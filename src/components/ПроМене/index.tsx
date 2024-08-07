@@ -5,16 +5,18 @@ import { ActionButton } from '@/shared/ActionButton';
 import { HomepageText, HomepageGraphic, SponsorRedbull, SponsorForbes, SponsorFortune } from '@static';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { motion } from 'framer-motion';
+
 type Props = {
   setSelectedLink: (value: SelectedLink) => void;
 };
 
-export const Home = ({ setSelectedLink }: Props) => {
+export const ПроМене = ({ setSelectedLink }: Props) => {  // Замінили Home на AboutMe
   const isDesktop = useMQ('(min-width:1060px)');
+  
   return (
-    <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
+    <section id="промене" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">  
       <motion.div
-        onViewportEnter={() => setSelectedLink(SelectedLink.Home)}
+        onViewportEnter={() => setSelectedLink(SelectedLink.ПроМене)}  // Замінили Home на AboutMe
         className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
       >
         <div className="z-10 mt-32 md:basis-3/5">
