@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Nav, ПроМене, Benefits, OurClasses, ContactUs } from '@/components';
+import { Nav, ПроМене, ONLINEтренування, OurClasses, ContactUs } from '@/components';
 import { SelectedLink } from '@/utils/types';
 
 export const App = () => {
@@ -19,7 +19,7 @@ export const App = () => {
       <Nav isTopOfPage={isTopOfPage} selectedLink={selectedLink} setSelectedLink={setSelectedLink} />
       <main>
         <ПроМене setSelectedLink={setSelectedLink} />
-        <Benefits setSelectedLink={setSelectedLink} />
+        <ONLINEтренування setSelectedLink={setSelectedLink} />
         <OurClasses setSelectedLink={setSelectedLink} />
         <ContactUs setSelectedLink={setSelectedLink} />
       </main>

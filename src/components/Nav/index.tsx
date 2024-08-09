@@ -28,7 +28,7 @@ export const Nav = ({ selectedLink, setSelectedLink, isTopOfPage }: Props) => {
               <div className={`${flexBetween} w-full`}>
                 <div className={`${flexBetween} gap-8 text-sm`}>
                   <Links link="Про мене" selectedLink={selectedLink} setSelectedLink={setSelectedLink} />  {/* Замінили Home на Про мене */}
-                  <Links link="Benefits" selectedLink={selectedLink} setSelectedLink={setSelectedLink} />
+                  <Links link="ONLINE тренування" selectedLink={selectedLink} setSelectedLink={setSelectedLink} />
                   <Links link="Our Classes" selectedLink={selectedLink} setSelectedLink={setSelectedLink} />
                   <Links link="Contact Us" selectedLink={selectedLink} setSelectedLink={setSelectedLink} />
                 </div>
@@ -56,7 +56,7 @@ export const Nav = ({ selectedLink, setSelectedLink, isTopOfPage }: Props) => {
 
           <div className="ml-[33%] flex flex-col gap-10 text-2xl">
             <Links link="Про мене" selectedLink={selectedLink} setSelectedLink={setSelectedLink} />  {/* Замінили Home на Про мене */}
-            <Links link="Benefits" selectedLink={selectedLink} setSelectedLink={setSelectedLink} />
+            <Links link="ONLINEтренування" selectedLink={selectedLink} setSelectedLink={setSelectedLink} />
             <Links link="Our Classes" selectedLink={selectedLink} setSelectedLink={setSelectedLink} />
             <Links link="Contact Us" selectedLink={selectedLink} setSelectedLink={setSelectedLink} />
           </div>

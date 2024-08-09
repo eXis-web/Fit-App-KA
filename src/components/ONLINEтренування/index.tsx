@@ -7,6 +7,7 @@ import { BenefitType } from '@/utils/types';
 import { Benefit } from './Benefit';
 import { ActionButton } from '@/shared/ActionButton';
 import { BenefitsGraphics } from '@static';
+
 const benefits: Array<BenefitType> = [
   {
     id: '0',
@@ -44,10 +45,10 @@ const container = {
   },
 };
 
-export const Benefits = ({ setSelectedLink }: Props) => {
+export const ONLINEтренування = ({ setSelectedLink }: Props) => {
   return (
-    <section id="benefits" className="mx-auto min-h-[100vh] w-5/6 py-20 ">
-      <motion.div onViewportEnter={() => setSelectedLink(SelectedLink.Benefits)}>
+    <section id="onlineтренування" className="mx-auto min-h-[100vh] w-5/6 py-20 ">
+      <motion.div onViewportEnter={() => setSelectedLink(SelectedLink.ONLINEтренування)}>
         <motion.div
           initial="hidden"
           whileInView="visible"
